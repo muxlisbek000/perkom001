@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" onkeyup="bos()" id="text" >
+    <br> 
+    <span id="typeing"></span>
+    <script>
+        let text=document.getElementById('text')
+        let eLogin='salom'
+        function bos(){
+            if(eLogin.startsWith(text.value)){
+                text.style.color='green'
+            }
+            else{
+                text.style.color='red'
+            }
+        } 
+        /* let typeing=document.getElementById('typeing')
+        text.addEventListener('keyup',(e)=>{
+            if(e.key=='Enter'){
+                typeing.innerHTML=text.value
+                text.value=''
+            }
+            else{
+                typeing.innerHTML='typeing...'
+            }
+        })
+ */
+   
+       
+    </script>
+</body>
+</html>
